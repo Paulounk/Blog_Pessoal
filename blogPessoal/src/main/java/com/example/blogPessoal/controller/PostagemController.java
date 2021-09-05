@@ -22,7 +22,7 @@ import com.example.blogPessoal.repository.PostagemRepository;
 
 @RestController
 @RequestMapping("/postagens")
-@CrossOrigin(value = "*", allowedHeaders = "*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class PostagemController {
 
 	@Autowired
@@ -49,8 +49,7 @@ public class PostagemController {
 	
 
 	@PostMapping
-	public ResponseEntity<Postagem> post(@Valid @RequestBody Postagem postagem){
-		
+	public ResponseEntity<Postagem> post(@RequestBody Postagem postagem){
 		return ResponseEntity.status(HttpStatus.CREATED)
 				.body(repository.save(postagem));
 	}

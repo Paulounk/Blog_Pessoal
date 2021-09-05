@@ -2,6 +2,7 @@ package com.example.blogPessoal.model;
 
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -42,6 +43,8 @@ public class Postagem {
 	@JsonIgnoreProperties ("postagem")
 	private Usuario usuario;
 	
+	
+	//GETTERS & SETTERS
 	public long getId() {
 		return id;
 	}

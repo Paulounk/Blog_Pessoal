@@ -41,7 +41,7 @@ public class SwaggerConfig {
 		
 		return new ApiInfoBuilder()
 				.title("Blog Pessoal")
-				.description("Projeto API Spring - Blog Pessoal")
+				.description("Blog Pessoal - Spring Boot")
 				.version("1.0.0")
 				.license("Apache License Version 2.0")
 				.licenseUrl("https://github.com/Paulounk")
